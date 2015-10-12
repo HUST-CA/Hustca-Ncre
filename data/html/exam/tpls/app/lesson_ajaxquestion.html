@@ -1,0 +1,58 @@
+			<form id="form1" name="form1" action="index.php?exam-app-lesson-ajax-questions">
+                                <div id="question_8757" class="paperexamcontent">
+					<div class="media well">
+						<ul class="nav nav-tabs">
+							<li class="active">
+								<span class="badge badge-info questionindex">1</span></a>
+							</li>
+							<li class="btn-group pull-right">
+								<button class="btn" type="button" onclick="javascript:favorquestion('8757');"><em class="icon-heart" title="收藏"></em></button>
+							</li>
+						</ul>
+						<div class="media-body well text-warning">
+							<a name="question_8757"></a>以下叙述中错误的是( )						</div>
+																		<div class="media-body well">
+	                    	A)C语言中的每条可执行语句和非执行语句最终都将被转换成二进制的机器指令
+B)C程序经过编译、连接步骤之后才能形成一个真正可执行的二进制机器指令文件
+C)用C语言编写的程序称为源程序，它以ASCII代码形式存放在一个文本文件中
+D)C语言源程序经编译后生成后缀为.obj的目标程序	                    </div>
+	                    						<div class="media-body well questionanswerbox" id="answernotice_8757">
+	                    			                        		                        		                        <label class="radio inline"><input type="radio" name="question[8757]" rel="8757" value="A" />A </label>
+		                        		                        		                        <label class="radio inline"><input type="radio" name="question[8757]" rel="8757" value="B" />B </label>
+		                        		                        		                        <label class="radio inline"><input type="radio" name="question[8757]" rel="8757" value="C" />C </label>
+		                        		                        		                        <label class="radio inline"><input type="radio" name="question[8757]" rel="8757" value="D" />D </label>
+		                        		                        		                        	                        	                    </div>
+												<div class="media-body well">
+							<div class="btn-group pull-right hide answerbox">
+			            										<a class="btn ajax" target="questionpanel" href="index.php?exam-app-lesson-ajax-questions&number=2" title="下一题">下一题</a>
+			            	</div>
+			            	<div class="btn-group pull-right">
+			            		<a class="btn questionbtn" href="javascript:;" onclick="javascript:$('.questionbtn').addClass('hide');$('.answerbox').removeClass('hide');" title="查看答案">查看答案</a>
+			            	</div>
+		            	</div>
+						<div class="media-body well answerbox hide">
+							<h5>答案</h5>
+							A						</div>
+						<div id="rightanswer_8757" class="hide">A</div>
+						<div class="media-body well answerbox hide">
+							<h5>解析</h5>
+							【解析】C语言中的非执行语句不会被编译，不会生成二进制的机器指令，所以A)错误。由C语言构成的指令序列称C源程序，C源程序经过C语言编译程序编译之后生成一个后缀为.OBJ的二进制文件(称为目标文件)；最后要由&quot;连接程序&quot;把此.OBJ文件与C语言提供的各种库函数连接起来生成一个后缀为.EXE的可执行文件。						</div>
+					</div>
+				</div>
+							</form>
+			<script type="text/javascript">
+				$("input:radio").click(function(){
+					var _this = $(this);
+					var qid = _this.attr('rel');
+					if(_this.val() == $("#rightanswer_"+qid).html())
+					{
+						_this.parents('.media-body').addClass('alert-success').addClass('alert').html('恭喜您回答正确！');
+					}
+					else
+					{
+						_this.parents('.media-body').addClass('alert-error').addClass('alert').html('回答错误，正确答案为：'+$("#rightanswer_"+qid).html()+'，您选择的答案是：'+_this.val());
+					}
+					$('.questionbtn').addClass('hide');
+					$('.answerbox').removeClass('hide');
+				});
+			</script>
